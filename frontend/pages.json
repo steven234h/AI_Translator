@@ -1,0 +1,57 @@
+{
+  "pages": [
+    {
+      "path": "pages/welcome/welcome",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": { "titleNView": false, "bounce": "none", "scrollIndicator": "none" }
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": { "titleNView": false, "bounce": "none", "scrollIndicator": "none" }
+      }
+    },
+    {
+      "path": "pages/favorites/favorites",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": { "titleNView": false, "bounce": "none", "scrollIndicator": "none" }
+      }
+    }
+  ],
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "",
+    "navigationStyle": "custom",
+    "navigationBarBackgroundColor": "#FF8C00",
+    "backgroundColor": "#FFF5E6",
+    "app-plus": {
+      "bounce": "none",
+      "scrollIndicator": "none"
+    }
+  },
+  "tabBar": {
+    "color": "#B8860B",
+    "selectedColor": "#FF8C00",
+    "borderStyle": "white",
+    "backgroundColor": "#cef3ff",
+    "fontSize": "16px",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/recognition.png",
+        "selectedIconPath": "static/recognition-active.png",
+        "text": "识别"
+      },
+      {
+        "pagePath": "pages/favorites/favorites",
+        "iconPath": "static/stars.png",
+        "selectedIconPath": "static/stars-active.png",
+        "text": "收藏"
+      }
+    ]
+  }
+}

@@ -1,0 +1,128 @@
+# 仅保留源代码、静态资源、配置文件；忽略构建产物、缓存、临时文件、敏感信息等
+
+# -----------------------------
+# 操作系统/通用临时文件
+# -----------------------------
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.log
+logs/
+*.tmp
+tmp/
+temp/
+*.swp
+*.swo
+*.orig
+
+# -----------------------------
+# IDE/编辑器
+# -----------------------------
+.vscode/
+.idea/
+*.iml
+.history/
+.hbuilderx/
+
+# -----------------------------
+# 环境变量/密钥（保留示例文件）
+# -----------------------------
+.env
+.env.*
+!.env.example
+
+# -----------------------------
+# Node/前端
+# -----------------------------
+node_modules/
+dist/
+build/
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+out/
+coverage/
+*.tsbuildinfo
+# 锁文件通常建议提交以保证依赖可重复安装
+!package-lock.json
+!yarn.lock
+!pnpm-lock.yaml
+
+# Uni-App / HBuilderX
+unpackage/
+
+# -----------------------------
+# Python/后端
+# -----------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+ENV/
+pip-wheel-metadata/
+*.egg-info/
+.eggs/
+build/
+dist/
+htmlcov/
+.ipynb_checkpoints/
+
+# -----------------------------
+# Docker/容器（保留配置文件）
+# -----------------------------
+*.pid
+
+# -----------------------------
+# 其他语言常见产物（如存在）
+# -----------------------------
+# Java
+target/
+*.class
+
+# Go
+bin/
+
+# Rust
+target/
+
+# -----------------------------
+# 本项目特定说明
+# -----------------------------
+# 前端源码与静态资源（会被保留）
+!frontend/
+!frontend/components/**
+!frontend/pages/**
+!frontend/static/**
+!frontend/utils/**
+!frontend/services/**
+!frontend/App.vue
+!frontend/main.js
+!frontend/manifest.json
+!frontend/pages.json
+!frontend/package.json
+!frontend/requirements.txt
+!frontend/Dockerfile
+!frontend/main.py
+!frontend/.env.example
+
+# 根目录常见配置/文档（会被保留）
+!docker-compose.yml
+!README.md
+!*.md
+!*.yml
+!*.yaml
+!*.json
+!*.toml
+!*.cfg
+!*.ini
+!start-*.sh
+!start-*.bat
+
+# 如存在 backend 目录，可按需保留其源码/配置（当前目录为空占位）
+!backend/
