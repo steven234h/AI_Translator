@@ -52,11 +52,7 @@ AI_Translator/
    # Windows PowerShell
    $env:MODELSCOPE_API_KEY = "ms-xxxxxxxx"
    $env:MODELSCOPE_BASE_URL = "https://api-inference.modelscope.cn/v1"
-   $env:MODELSCOPE_MODEL = "Qwen/Qwen3-VL-Max"
-   # 可选：分别指定视觉/翻译/定义模型
-   # $env:MODELSCOPE_MODEL_VISION = "..."
-   # $env:MODELSCOPE_MODEL_TRANSLATION = "..."
-   # $env:MODELSCOPE_MODEL_DEFINITION = "..."
+   $env:MODELSCOPE_MODEL = "AI模型"
    python main.py
    ```
 
@@ -64,7 +60,7 @@ AI_Translator/
    # macOS / Linux
    export MODELSCOPE_API_KEY=ms-xxxxxxxx
    export MODELSCOPE_BASE_URL=https://api-inference.modelscope.cn/v1
-   export MODELSCOPE_MODEL=Qwen/Qwen3-VL-Max
+   export MODELSCOPE_MODEL=AI模型
    uvicorn main:app --host 0.0.0.0 --port 8000
    ```
 
