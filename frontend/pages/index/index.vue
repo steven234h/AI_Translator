@@ -3,13 +3,13 @@
     <ParticleBackground :fullScreen="true" :particleCount="Math.round(80 * 2 / 3)" :speedScale="0.6" :autoPause="true" :mouseRadius="140" :connectDistance="110" />
     <!-- 右上角功能按钮：历史、分享 -->
     <view class="header-actions absolute">
-      <view class="action-btn" @click="openHistory" :aria-label="'查看历史识别记录'">
-        <text class="action-icon">🕘</text>
+        <view class="action-btn" @click="openHistory" :aria-label="'查看历史识别记录'">
+          <image class="action-icon" src="/static/icon-history.svg" mode="aspectFit"></image>
+        </view>
+        <view class="action-btn" :class="{ disabled: !shareEnabled }" @click="onShareClick" :aria-label="'分享识别结果'">
+          <image class="action-icon" src="/static/icon-share.svg" mode="aspectFit"></image>
+        </view>
       </view>
-      <view class="action-btn" :class="{ disabled: !shareEnabled }" @click="onShareClick" :aria-label="'分享识别结果'">
-        <text class="action-icon">🔗</text>
-      </view>
-    </view>
     <!-- 头部标题 -->
     <view class="header">
       <text class="title">物体识别</text>
@@ -126,8 +126,8 @@
             </view>
           </view>
           <view class="object-actions">
-            <text class="icon-button icon-copy" @click.stop="copyItem(obj)">📋</text>
-            <image class="icon-button icon-star" :src="(obj._favorited || isItemFavorited(obj)) ? '/static/stars-active.png' : '/static/stars.png'" mode="aspectFit" @click.stop="addFavoriteFromList(obj)" />
+            <image class="icon-button icon-copy" src="/static/icon-copy.svg" mode="aspectFit" @click.stop="copyItem(obj)" />
+            <image class="icon-button icon-star" :src="(obj._favorited || isItemFavorited(obj)) ? '/static/icon-bookmark-active.svg' : '/static/icon-bookmark.svg'" mode="aspectFit" @click.stop="addFavoriteFromList(obj)" />
           </view>
         </view>
 
@@ -2114,7 +2114,7 @@ button[disabled], .btn-primary[disabled], .btn-secondary[disabled] {
 .desc-card {
   margin-bottom: 20rpx;
   display: flex;
-  align-items: flex-start; 
+  align-items: flex-start;
   gap: 20rpx;
   background: linear-gradient(135deg, #f5f7ff, #f0eaff);
   border: 1rpx solid #a5b4fc;
@@ -2553,10 +2553,10 @@ button[disabled], .btn-primary[disabled], .btn-secondary[disabled] {
 }
 .icon-star {
   width: 88rpx;
-  height: 88rpx;
+  height: 66rpx;
 }
 .icon-copy {
-  width: 88rpx;
+  width: 77rpx;
   height: 88rpx;
 }
 /* 现代加载遮罩（毛玻璃 + 圆环 + 三点跳动）*/

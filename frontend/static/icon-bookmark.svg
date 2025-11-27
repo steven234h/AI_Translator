@@ -1,0 +1,9 @@
+<svg width="84" height="96" viewBox="0 0 84 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g-bookmark" x1="14" y1="6" x2="70" y2="90" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6FA8FF"/>
+      <stop offset="1" stop-color="#8F62FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M21 12C21 10.3431 22.3431 9 24 9H60C61.6569 9 63 10.3431 63 12V80.8284C63 82.8284 60.5711 83.7685 59.2426 82.2929L44.7574 66.7071C43.9869 65.8433 42.6282 65.8232 41.8316 66.6608L24.2312 85.1838C22.8689 86.6261 21 85.9184 21 83.9714V12Z" stroke="url(#g-bookmark)" stroke-width="7" fill="rgba(124,140,248,0.08)" stroke-linejoin="round"/>
+</svg>
