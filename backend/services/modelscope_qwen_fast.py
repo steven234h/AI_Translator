@@ -179,9 +179,10 @@ class ModelScopeQwenService:
                             "你是视觉理解与多语描述专家。识别图片中最多"
                             f"{max_objects}个重要物体，并返回：\n"
                             "- 名称多语言：zh,en,ja（ja为日语）\n"
-                            "- 位置：left,top,width,height（整数像素）\n"
+                            "- 位置：location 必须是对象，且只包含 left,top,width,height 四个整数像素字段\n"
                             "- 图片描述：zh,en,ja 各用一短句（10-20字），基于识别结果生成\n\n"
                             "仅返回有效JSON，不要任何解释或标记。\n\n"
+                            "禁止把位置写成数组或简写，禁止写成 {\"left\":10,10,780,900}。\n"
                             "示例：{\n  \"objects\": [{\n    \"names\":{\"zh\":\"苹果\",\"en\":\"apple\",\"ja\":\"リンゴ\"},\n    \"location\":{\"left\":100,\"top\":150,\"width\":80,\"height\":90}\n  }],\n  \"descriptions\":{\"zh\":\"一句中文描述\",\"en\":\"one English sentence\",\"ja\":\"1文の日本語説明\"}\n}"
                         )
                     },
