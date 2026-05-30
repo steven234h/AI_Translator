@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://139.196.158.246:8000'
+const API_BASE_URL = 'http://localhost:8000'
 
 // API请求工具
 export const request = {
